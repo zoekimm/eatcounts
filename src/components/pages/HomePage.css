@@ -1,6 +1,6 @@
-import from 
-
 .home-container{ 
-    Align-Items: center;
-    Justify-Content: centre;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    Justify-Content: center;
 }

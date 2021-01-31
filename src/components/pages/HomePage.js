@@ -5,8 +5,7 @@ import './HomePage.css';
 function HomePage() {
     return (
       <div className = "home-container">
-            <p>HOME</p>
-              <img src="./logo.png" className="nav-logo"  />
+            <img src="./logo.png" />
       </div>
     );
 };
