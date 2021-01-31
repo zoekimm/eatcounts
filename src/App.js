@@ -8,9 +8,9 @@ const App = () => {
   const API_ID = "";
   const API_KEY = "";
 
-  const [search, setSearch] = useState("");
   const [nutrition, setNutrition] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [search, setSearch] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     getRecipe()
@@ -33,20 +33,17 @@ const App = () => {
 
   return (
     <div className= "App">
-      {/* <div className = "Title">
-      APP-NAME
-      </div> */}
-      <form className = "food-search-form" onSubmit = {getSearch}>
+      <form onSubmit = {getSearch} className = "food-search-form">
         <input 
-        className = "food-search-input" 
-        type = "text" 
-        value = {search}
-        onChange = {changeTerm} />
+          className = "food-search-input" 
+          type = "text" 
+          value = {search}
+          onChange = {changeTerm} 
+        />
         <button className = "food-search-button" type = "submit">
-        Search
+          Search
         </button>
       </form> 
-      <div> 
       {nutrition.map(recipe =>(
         <Recipe 
         label = {recipe.recipe.label}
@@ -56,7 +53,6 @@ const App = () => {
         totalNutrients = {recipe.recipe.totalNutrients}
         img = {recipe.recipe.image}/>
       ))}
-      </div>
     </div>
   );
 };
