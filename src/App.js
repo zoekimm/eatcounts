@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react"; 
 import Recipe from './Recipe'
-import NavBar from './components/NavBar'
 import './App.css';
 
 const App = () => {
