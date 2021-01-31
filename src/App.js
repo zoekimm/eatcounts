@@ -42,9 +42,9 @@ const App = () => {
         type = "text" 
         value = {search}
         onChange = {changeTerm} />
-        <buttom className = "food-search-button" type = "submit">
+        <button className = "food-search-button" type = "submit">
         Search
-        </buttom>
+        </button>
       </form> 
       <div> 
       {nutrition.map(recipe =>(
