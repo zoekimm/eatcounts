@@ -46,7 +46,7 @@ function RecipePage() {
             Search
             </button>
         </form> 
-        <div class = "recipes"> 
+        <div className = "recipes"> 
         {nutrition.map(recipe =>(
             <Recipe 
             label = {recipe.recipe.label}
@@ -57,6 +57,16 @@ function RecipePage() {
             totalNutrients = {recipe.recipe.totalNutrients}*/
             img = {recipe.recipe.image}/>
         ))}
+        </div>
+        <div className = "nutritions">
+          <h2>Nutritional Information</h2>
+          <hr></hr>
+          <p>Calories = <b>1136.93 kcal</b> / 2400 Kcal (recommended)</p>
+          <p>Protein = <b>42.9 g </b>/ 48 g (recommended)</p>
+          <p>Fat = <b>35.2 g</b>/ 54 g (recommended)</p>
+        </div>
+        <div className = "nutritions">
+          <h2><a href="https://www.amazon.com/cart/localmarket?ref_=&almBrandId=VUZHIFdob2xlIEZvb2Rz" target="blank">Your Customized Amazon Fresh Cart!</a></h2>
         </div>
         </div>
     );
