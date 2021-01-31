@@ -1,0 +1,50 @@
+.home-container{ 
+    align-items: center;
+    display: flex;
+    text-align: center;
+    Justify-Content: center;
+}
+
+.home-title{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.home-developer{
+    margin-top: 20px;
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    font-weight: light;
+}
+
+.home-info-black{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+}
+
+.home-info-red{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    font-weight: normal;
+}
+
+.app-logo{ 
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    Justify-Content: center;
+}

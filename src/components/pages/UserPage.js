@@ -1,10 +1,10 @@
 import React from "react"; 
 import './Page.css';
 
-function AboutPage() {
+function UserPage() {
     return (
-        <div className = "about-container">
-            <div className = "about-title">
+        <div className = "user-container">
+            <div className = "user-title">
             About EatCounts
             </div>
             <div className = "home-info">
@@ -19,4 +19,4 @@ function AboutPage() {
 };
 
 
-export default AboutPage;
+export default UserPage;
