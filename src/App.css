@@ -5,7 +5,6 @@
   background-color: white;
 }
 
-
 .food-search-form {
   align-items: center;
   display: flex;
@@ -25,3 +24,71 @@
   padding: 15px;
 }
 
+.recipes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 100px;
+  padding-top: 70px;
+  padding-right: 70px;
+  width: 80%;
+}
+
+.recipes .recipe{
+  width: 45%;
+  background-color: white;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-weight: 300;
+  padding: 20px;
+  border-radius: 5px;
+  color: #1f2ed4;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+
+.recipe img {
+  position: relative;
+  border-radius: 25px;
+  top: -30px;
+  max-width: 120px;
+  margin-right: 30px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.recipe .recipe_name {
+  margin: 0;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.recipe .recipe_label,
+.recipe .recipe_calories {
+  margin: 0;
+  font-weight: 300;
+}
+
+.recipe .null {
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #2c2c2c;
+}
+
+.recipe .recipe_label {
+  margin-right: 100px;
+  font-size: 14px;
+}
+
+
+.recipe .recipe_label {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 5px 0px;
+}
