@@ -26,6 +26,15 @@ function NavBar () {
                     </li>
                     <li className = "nav-itmes">
                         <Link 
+                        to = "/" 
+                        className = "nav-links"
+                         onClick = {onClicked}
+                        >
+                        About
+                        </Link>
+                    </li>
+                    <li className = "nav-itmes">
+                        <Link 
                         to = "/RecipePage" 
                         className = "nav-links" 
                         onClick = {onClicked}

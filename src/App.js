@@ -6,14 +6,14 @@ import NavBar from './components/NavBar';
 import './App.css';
 
 const App = () => {
-  /* For edamam API */
 
   return (
     <Router>
       <NavBar />
       <Switch>
         <Route exact path ='/' component={HomePage} />
-        <Route exact path='/recipepage' component={RecipePage} />
+        <Route exact path ='/about' component={AboutPage} />
+        <Route exact path='/recipe' component={RecipePage} />
       </Switch>
     </Router>
   );
