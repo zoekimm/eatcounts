@@ -1,12 +1,12 @@
 import React from "react"; 
+import './HomePage.css';
 
 
 function HomePage() {
     return (
-      <div>
-          <p>
-              HOME
-          </p>
+      <div className = "home-container">
+            <p>HOME</p>
+              <img src="./logo.png" className="nav-logo"  />
       </div>
     );
 };
