@@ -1,30 +1,42 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
-export default class Nav extends React.Component {
-  render() {    
+function NavBar () {
+    const [click, setClick] = useState(false);
+    const onClicked = () => setClick(!click);
+
     return (
-      <nav className="Nav">
-        <div className="Nav__container">
-          <Link to="/" className="Nav__brand">
-            <img src="logo.svg" className="Nav__logo" />
-          </Link>
-
-          <div className="Nav__right">
-            <ul className="Nav__item-wrapper">
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/path1">Link 1</Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/path2">Link 2</Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/path3">Link 3</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav className = "navbar">
+            <div className = "bar-container">
+                <Link to = "/" className = "nav-logo">
+                    EatCounts <i className = "fas fa-typo3" />
+                </Link>
+                <div className = "menu" onClick = {onClicked}>
+                    <i className = {click ? 'fas fa-times' : 'fas fa-bars'} />
+                </div>
+                <ul className = {click ? 'nav-menu-active' : 'nav-menu'}>
+                    <li className = "nav-itmes">
+                        <Link 
+                        to = "/" 
+                        className = "nav-links"
+                         onClick = {onClicked}
+                        >
+                        Home 
+                        </Link>
+                    </li>
+                    <li className = "nav-itmes">
+                        <Link 
+                        to = "/RecipePage" 
+                        className = "nav-links" 
+                        onClick = {onClicked}
+                        >
+                        Recipe 
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     );
-  }
 }
+
+export default NavBar;

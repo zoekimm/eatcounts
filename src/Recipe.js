@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Recipe = ({label, calories, dietLabels, healthLabels, totalNutrients, img}) => {
+const Recipe = ({label, calories, dietLabels, url, img}) => {
     return(
         <div class = "recipe">
             <img src = {img} alt = "" />
@@ -8,8 +8,7 @@ const Recipe = ({label, calories, dietLabels, healthLabels, totalNutrients, img}
             <br></br>
             <h5 class = "recipe_calories">{(Math.round(parseFloat(calories)*100)/100).toFixed(2)} Kcal</h5>
             <h5 class = "recipe_label">{dietLabels}</h5>
-            <p>{healthLabels}</p>
-            <p>{totalNutrients}</p>
+            <p>{url}</p>
         </div>
     );
 };
