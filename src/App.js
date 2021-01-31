@@ -17,9 +17,9 @@ const App = () => {
   }, [searchTerm]);
 
   const getRecipe = async() => {
-      const response = await fetch(`https://api.edamam.com/search?q=${searchTerm}&app_id=${API_ID}&app_key=${API_KEY}`);
-      const data = await response.json();
-      setNutrition(data.hits);
+    const response = await fetch(`https://api.edamam.com/search?q=${searchTerm}&app_id=${API_ID}&app_key=${API_KEY}`);
+    const data = await response.json();
+    setNutrition(data.hits);
   }
   
   const getSearch = event => {
