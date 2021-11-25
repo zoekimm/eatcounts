@@ -1,5 +1,10 @@
 # EatCounts
 
+<p align="center">
+  <img width="745" alt="Screen Shot 2021-11-25 at 12 15 54 AM" src="https://user-images.githubusercontent.com/47043866/143383741-06ea7159-3fba-49a7-9bb3-b9acd7cc239c.png">
+</p>
+
+
 ## Inspiration
 We want to empower mothers and all women who single handedly sacrifice their time and energy in the kitchen for their family. According to The 2014 Eating & Health Module Data:Americans' Eating Patterns and Time Spent on Food, the average time spent in food preparation and cleanup by women (approximately 56 minutes) is almost twice as high compared to men’s (30 minutes). From the same source, 74% of the women indicated that they are the usual meal preparer in their household, whereas only 33% of the men participated in kitchen work. The amount of time women have to dedicate in the kitchen only increased recently as the COVID-19 pandemic forced more people to rely on home cooked meals. EatCounts aims to allow everyone to easily participate in the kitchen work which gives those good hearted women the chance to pursue their potential career and vision. 
 
